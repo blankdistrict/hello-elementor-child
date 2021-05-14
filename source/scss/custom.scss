@@ -1,0 +1,36 @@
+// Settings
+@import '_settings';
+
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-feature-settings: 'lnum';
+}
+
+::selection {
+	color: white;
+}
+
+address {
+	font-style: normal;
+}
+
+.elementor-widget-text-editor p:last-of-type {
+	margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+    .elementor-widget-text-editor ul {
+        padding-left: 1em;
+    }
+}
+
+.elementor-widget-text-editor ol,
+.elementor-widget-text-editor ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+	&:first-of-type {
+		margin-top: 0;
+	}
+}

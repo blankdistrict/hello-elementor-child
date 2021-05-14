@@ -1,0 +1,36 @@
+// Settings
+@import '_settings';
+
+//  Logo
+.login h1 a {
+    background-image: url('../img/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    width: 100%;
+}
+
+// WordPress UI
+.wp-core-ui .button-primary {
+    background: $color-primary;
+    border-color: mix(black, $color-primary, 5%);
+    box-shadow: 0 1px 0 mix(black, $color-primary, 10%);
+    color: white;
+    text-decoration: none;
+    text-shadow: 0 -1px 1px rgba(black, .5);
+
+    &:hover, &:focus {
+        background: $color-accent;
+        border-color: mix(black, $color-accent, 10%);
+        box-shadow: 0 1px 0 mix(black, $color-accent, 10%);        
+    }
+}
+
+.login {
+	.message,
+	.success,
+	#login_error {
+		border-left-color: $color-accent;
+	}
+}
